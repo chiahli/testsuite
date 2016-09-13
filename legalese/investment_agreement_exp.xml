@@ -1,3 +1,53 @@
+<?!= data.xml_declaration ?>
+<?!= data.xmlRoot() ?>
+<?!= include("inc_cover_standard_parties", data, {cover_title:"Investment Agreement", rcpts_to:rcpts_to}) ?>
+<Story_Main>
+<chapter_header>Investment Agreement</chapter_header>
+
+<chapter_header>INDEX</chapter_header>
+
+<numbered_1_para>Definitions</numbered_1_para>
+<numbered_1_para>Third Party Rights</numbered_1_para>
+<numbered_1_para>The Company's Obligations</numbered_1_para>
+<numbered_1_para>Conditions Precedent</numbered_1_para>
+<numbered_1_para>Subscription and Closing</numbered_1_para>
+<numbered_1_para>Representations and Warranties</numbered_1_para>
+<numbered_1_para>Miscellaneous</numbered_1_para>
+
+<para_1>Schedule 1: SHAREHOLDING STRUCTURE</para_1>
+<para_1>Schedule 2: CLOSING RESOLUTIONS</para_1>
+
+<para_1>THIS INVESTMENT AGREEMENT (the “Agreement”) is today entered into by and BETWEEN:</para_1>
+
+<?!= include("inc_enumerate_parties", data, rcpts_to, { term:{"new_investor": "investor"} }) ?>
+
+<b_left_sidehead_nonum>Recitals</b_left_sidehead_nonum>
+The Series Seed Investors desire to subscribe for preference shares of the Company, and the Company desires to issue and allot to these shares, pursuant to the terms of this Agreement.
+
+<numbered_1_firstbold>Definitions</numbered_1_firstbold>
+
+<definition>Agreement Date means the date of this Agreement;</definition>
+
+<definition>Closing means the closing of the subscription and purchase of the Shares, in accordance with Schedule <xref to="exp_schedule_1"/> of this Agreement;</definition>
+
+<definition>Closing Resolutions means the Company's resolutions substantially in the form attached in Schedule <xref to="exp_schedule_2"/> with the heading Closing Resolutions;</definition>
+
+<definition>Constitution means the Company's Constitution for time being;</definition>
+
+<definition>Pre-Money Valuation means S$<?= data.pre_money ?>;</definition> 
+
+<definition>Series Seed Investors’ Aggregate Investment Amount means S$<?= data.amount_raising ?>;</definition>
+
+<definition>Series Seed Investors’ Subscription Price means S$<?= data.price_per_share ?> per share;</definition>
+
+<definition>Series Seed Preference Shares means the Series Seed convertible preference shares of the Company, carrying the rights stated in the Constitution and Shareholder Agreement;</definition>
+
+<definition>Shares means shares of the Company of any class or type, and includes Preference Shares;</definition>
+ 
+<definition>Shareholders’ Agreement means the Shareholders Agreement signed between <?= data.shareholder.name ?> and Expara Ventures Fund III Pte Ltd.</definition>
+
+<numbered_1_firstbold>Third Party Rights</numbered_1_firstbold>
+<para_1>A person who is not a party to this Agreement has no right under the Singapore Contracts (Rights of Third Parties) Act (Chapter 53B) for time being in force to enforce or enjoy the benefit of any term of this Agreement.</para_1>
 
 <numbered_1_firstbold>The Company's Obligations</numbered_1_firstbold>
 <para_1>Where this Agreement provides that the Company shall perform an act or is subject to an obligation, each Founder agrees to take all reasonable action to use all its rights as a shareholder of the Company or as a Director to procure that the Company performs that act or complies with that obligation,including:</para_1>
