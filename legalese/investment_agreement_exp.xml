@@ -272,6 +272,7 @@ The Series Seed Investors desire to subscribe for preference shares of the Compa
 
 <para_1>Resolved to issue Series Seed Preference Shares in accordance to Schedule <xref to="exp_schedule_1"/> of the Investment Agreement dated DATE.</para_1>
 
+
 <numbered_1_para>Directors</numbered_1_para>
 
 <para_1>Resolved that with immediate effect, the following person be appointed as a director of the company: Douglas keith Abrams</para_1>
@@ -293,7 +294,7 @@ The Series Seed Investors desire to subscribe for preference shares of the Compa
 
 <? data.signature_comment = "Chairperson" ?>
 <para_1>•</para_1>
-<para_>[End of Schedule]</para_1> 
+<para_1>[End of Schedule]</para_1> 
 
 <chapter_header xname="exp_exhibit_a">EXHIBIT A: CONTACT DETAILS</chapter_header>
 
@@ -331,8 +332,7 @@ Phone:  +65 6323 3084
  
 <chapter_header>Signatures</chapter_header>
 
-   <?!= include("inc_enumerate_signatures", data, {rcpts_to:rcpts_to, _include2: { term: { new_investor: "purchaser" } } }
-) ?>
+   <?!= include("inc_enumerate_signatures", data, {rcpts_to:rcpts_to}) ?>
 
  </Story_Main>
 </Root>
