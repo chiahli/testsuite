@@ -78,7 +78,7 @@
 <numbered_3_para>are fully paid; and</numbered_3_para> 
 <numbered_3_para>constitute the entire issued share capital of the Company; and</numbered_3_para>
 <numbered_3_para>are legally and beneficially owned by the Shareholders in the numbers set out below; and</numbered_3_para>
-<numbered_3_para>are free from any encumbrance, lien, charge (or any agreement or arrangement to create any of them); and other than as set out in <xref to="exp_special_rights_ss">, there are no outstanding options or other rights</numbered_3_para>
+<numbered_3_para>are free from any encumbrance, lien, charge (or any agreement or arrangement to create any of them); and other than as set out in <xref to="exp_special_rights_ss"/>, there are no outstanding options or other rights</numbered_3_para>
 <numbered_3_para>in favour of any person to acquire any shares or to subscribe for shares in the capital of the Company.</numbered_3_para> 
 
 <para_2>The Company only has two share classes- Ordinary Shares and Preference Shares. Whereby the Series Seed Preference Shares special rights are as described in this agreement.</para_2>
@@ -88,7 +88,7 @@
 <numbered_2_para>Vesting of Founders’ Shares</numbered_2_para>
 <para_2>Each Founder Shareholder shall have three years vesting beginning upon the signing of the Shareholders’ Agreement:</para_2>
 
-<para_2><?= f_unrestricted_current ?> vesting immediately, with remaining vesting monthly over the next <? f_term_months ?> months as shown in Schedule <xref to="exp_vesting_schedule"/>. In the event of an acquisition or other change of control of the Company, Founders’ Shares will vest fully.</para_2>
+<para_2><?= data.founder.f_unrestricted_current ?> vesting immediately, with remaining vesting monthly over the next <? data.founder.f_term_months ?> months as shown in Schedule <xref to="exp_vesting_schedule"/>. In the event of an acquisition or other change of control of the Company, Founders’ Shares will vest fully.</para_2>
 
 <para_2>This Repurchase Option shall provide that upon the resignation or termination of the employment of or engagement with a Founder (“Outgoing Founder”), with or without cause, the remaining Founders first, and then the Company second or its assignee (to the extent permissible under applicable securities law qualification) retains the option to repurchase at the lower of cost or the current fair market value any unvested shares held by the Outgoing Founder.</para_2>   
 
