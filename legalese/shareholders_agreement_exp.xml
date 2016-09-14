@@ -435,7 +435,8 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <chapter_header>Signatures</chapter_header>
 
-<?!= include("inc_enumerate_signatures", data, {rcpts_to:rcpts_to}) ?>
+<?!= include("inc_enumerate_signatures", data, rcpts_to, _include2: { term: { new_investor: "Series Seed investor" } } 
+) ?>
 
 </Story_Main>
 </Root>
