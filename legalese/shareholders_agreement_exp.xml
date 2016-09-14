@@ -129,7 +129,7 @@
 <para_3>(i) securities issuable upon conversion of any of the Series Seed Preference, or as a dividend or distribution on the Series Seed Preference; (ii) securities issued upon the conversion of any debenture, warrant, option, or other convertible security; and (iii) Ordinary Shares issuable upon a stock split, stock dividend, or any subdivision of shares of Ordinary Shares</para_3>
 
 <numbered_2_para>Employee Share Options (ESOP) Scheme</numbered_2_para> 
-<para_2>The Shareholders agree that the board shall implement a share option program that will allow a committee (“the Option Committee”) to expand the current share capital with up to <?= data.parties.ESOP[%s] ?> and allocate the new shares to employees, advisors and board members.</para_2>
+<para_2>The Shareholders agree that the board shall implement a share option program that will allow a committee (“the Option Committee”) to expand the current share capital with up to <?= data.esop_reservation ?> and allocate the new shares to employees, advisors and board members.</para_2>
 
 <para_2>The Option Committee shall be formed within six months after the date of this Agreement. The Option Committee shall have two members. One member appointed by the Series Seed Investors and one by the Founders.</para_2>
 
@@ -152,7 +152,7 @@
 <numbered_1_para>Board of Directors</numbered_1_para>
 
 <numbered_2_para>Members</numbered_2_para>
-<para_2>The Board will consist of <?= data.number_directors_TOTAL ?> members. <?= data.number_directors_common ?> directors elected by holders of a majority of Ordinary Shares, <?= data.number_directors_seriesseed ?> elected by holders of a majority of Series Seed Preference Shares (the “Series Seed Director”).</para_2>
+<para_2>The Board will consist of <?= data.total_number_of_directors ?> members. <?= data.number_directors_common ?> directors elected by holders of a majority of Ordinary Shares, <?= data.number_directors_seriesseed ?> elected by holders of a majority of Series Seed Preference Shares (the “Series Seed Director”).</para_2>
 
 <para_2>The board members are elected at the general meeting for one year at the time. The board members will elect the chairman. All ordinary matters will be decided by a majority vote of the board. Consent Matters as specified in Schedule <xref to="exp_consent_matters"/> shall additionally require the affirmative vote of the Series Seed Director.</para_2>
 
@@ -393,7 +393,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <numbered_2_para>any action that creates preferences or priority as to dividends or assets senior to or on a parity with the Series Seed Preference Shares;</numbered_2_para>
 
-<numbered_2_para>any material amendment of the M&A;</numbered_2_para> 
+<numbered_2_para>any material amendment of the Constitution;</numbered_2_para> 
 
 <numbered_2_para>the sale of all or substantially all the Company's assets or merger or consolidation of the Company with any other entity;</numbered_2_para> 
 
@@ -407,7 +407,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <numbered_2_para>change the principal business of the Company, enter new lines of business, or exit the current line of business;</numbered_2_para>
 
-<numbered_2_para>any single expenditure which exceeds S$50,000.</numbered_2_para>
+<numbered_2_para>any single expenditure which exceeds <?= data.single_expenditure ?>.</numbered_2_para>
 
 
 <chapter_header>Schedule 5: SHAREHOLDING STRUCTURE</chapter_header>
@@ -421,7 +421,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <b_left_sidehead>Post-investment capitalization</b_left_sidehead>
 
-<b_left_sidehead xname="exp_post_investment_capitalization_with_esop">Post-investment capitalization (with Share Option of <?= data.parties.ESOP[%s] ?>)</b_left_sidehead>
+<b_left_sidehead xname="exp_post_investment_capitalization_with_esop">Post-investment capitalization (with Share Option of <?= data.esop_reservation ?>)</b_left_sidehead>
 
 //insert table here
 
