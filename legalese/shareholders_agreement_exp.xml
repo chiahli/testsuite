@@ -88,7 +88,7 @@
 <numbered_2_para>Vesting of Founders’ Shares</numbered_2_para>
 <para_2>Each Founder Shareholder shall have three years vesting beginning upon the signing of the Shareholders’ Agreement:</para_2>
 
-<para_2><?= data.founder.f_unrestricted_current ?> vesting immediately, with remaining vesting monthly over the next <? data.founder.f_term_months ?> months as shown in Schedule <xref to="exp_vesting_schedule"/>. In the event of an acquisition or other change of control of the Company, Founders’ Shares will vest fully.</para_2>
+<para_2><?= data.key_holder.f_unrestricted_current ?> vesting immediately, with remaining vesting monthly over the next <? data.key_holder.f_term_months ?> months as shown in Schedule <xref to="exp_vesting_schedule"/>. In the event of an acquisition or other change of control of the Company, Founders’ Shares will vest fully.</para_2>
 
 <para_2>This Repurchase Option shall provide that upon the resignation or termination of the employment of or engagement with a Founder (“Outgoing Founder”), with or without cause, the remaining Founders first, and then the Company second or its assignee (to the extent permissible under applicable securities law qualification) retains the option to repurchase at the lower of cost or the current fair market value any unvested shares held by the Outgoing Founder.</para_2>   
 
@@ -321,15 +321,15 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <a_left_sidehead xname="exp_drag_along">Drag Along – value target</a_left_sidehead>
 
-<para_1>If a majority of the holders of Preference Shares agree to a sale or liquidation of the Company at any time after the date of signing of the Shareholders’ Agreement at a valuation of the Company which is equal to or greater than S$40,000,000 the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
+<para_1>If a majority of the holders of Preference Shares agree to a sale or liquidation of the Company at any time after the date of signing of the Shareholders’ Agreement at a valuation of the Company which is equal to or greater than <?= data.drag_along_valuation_target ?> the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
 
 <a_left_sidehead xname="exp_drag_along">>Drag Along – time trigger</a_left_sidehead>
 
-<para_1>If a majority of the holders of Preference Shares and the common shareholders agree to a sale or liquidation of the Company at any time after 3 years from the date of signing of the Shareholders’ Agreement, the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
+<para_1>If a majority of the holders of Preference Shares and the common shareholders agree to a sale or liquidation of the Company at any time after <?= data.drag_along_years_target ?> years from the date of signing of the Shareholders’ Agreement, the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
 
 <a_left_sidehead xname="exp_drag_along">Drag Along – by majority decision</a_left_sidehead>
 
-<para_1>If the holders of at least 51 per cent in aggregate of the Ordinary Shares and 2/3 of the holders of Preference Shares (the “Selling Shareholders”) wish to transfer the Shares held by them (the "Sale Shares") to an independent, bona fide and arm's length third party purchaser (the "Third Party Purchaser"), the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
+<para_1>If the holders of at least <?= data.drag_along_majority_decision ?> per cent in aggregate of the Ordinary Shares and 2/3 of the holders of Preference Shares (the “Selling Shareholders”) wish to transfer the Shares held by them (the "Sale Shares") to an independent, bona fide and arm's length third party purchaser (the "Third Party Purchaser"), the holders of the remaining Preference and Ordinary Shares shall consent to and raise no objections to such sale and, if required, sell their shares on the same terms.</para_1>
 
 <a_left_sidehead>Exercising Drag Along rights</a_left_sidehead>
 
