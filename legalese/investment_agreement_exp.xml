@@ -282,7 +282,7 @@ The Series Seed Investors desire to subscribe for preference shares of the Compa
 </Table></para_1>
 
 
-<b_left_sidehead_nonum>Post-investment capitalization (with Share Option of)</b_left_sidehead_nonum>
+<b_left_sidehead_nonum>Post-investment capitalization (with Share Option of <?= data.esop_reservation ?>)</b_left_sidehead_nonum>
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
