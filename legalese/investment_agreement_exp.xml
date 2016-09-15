@@ -288,15 +288,14 @@ The Series Seed Investors desire to subscribe for preference shares of the Compa
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
 <?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
-<? var keyHolders = data.parties.key_holder ?>
-<? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
+<? var allInvestors = data.capTable.getActiveRound().getAllInvestors(); ?>
 
-<para_1><Table aid:table="table" aid:tcols="2" aid:trows="<?= Object.keys(oldInvestors.holders).length+1 ?>" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+<para_1><Table aid:table="table" aid:tcols="2" aid:trows="<?= Object.keys(allInvestors.holders).length+1 ?>" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Name</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>No. of Shares</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Holdings</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Share Class</cell_c></Cell>
-<? for (var hh in oldInvestors.holders) {
+<? for (var hh in allInvestors.holders) {
   if (data._entitiesByName[hh] == undefined) { continue }
   with(data._entitiesByName[hh]) { ?>
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= hh ?></cell_c></Cell>
@@ -343,7 +342,6 @@ The Series Seed Investors desire to subscribe for preference shares of the Compa
 
 <chapter_header xname="exp_exhibit_a">EXHIBIT A: CONTACT DETAILS</chapter_header>
 
-//insert table 
 <para_1>
 <Table aid:table="table" aid:tcols="2" aid:trows="7" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
 <Cell aid:ccols="1" aid:ccolwidth="122" aid:crows="1" aid:table="cell" aid5:cellstyle="border_r"><cell>Company Address</cell></Cell>
