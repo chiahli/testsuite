@@ -279,7 +279,7 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
-<? } } ?>
+<? } } } ?>
 </Table>
 </para_1>
 
@@ -304,7 +304,7 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(hh, previousRound) ?></cell_c></Cell>
-<? } } ?>
+<? } } } ?>
 </Table></para_1>
 
 
@@ -363,7 +363,7 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.parties.name(hh, activeRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.parties.address(hh, activeRound) ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.parties.email(hh, activeRound) ?></cell_c></Cell>
-<? } } ?>
+<? } } } ?>
 </Table>
 </para_1>
  
