@@ -342,27 +342,28 @@
 
 <chapter_header xname="exp_exhibit_a">EXHIBIT A: CONTACT DETAILS</chapter_header>
 
-<? var new_investors = data.capTable.getActiveRound(); ?>
-<? var communicating_investors = Object.keys(new_investors); ?>
+<? var activeRound = data.capTable.getActiveRound(); ?>
+<? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
+<?   Logger.log("communicatingInvestors: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<? } ?>
+<? var communicatingInvestors  = data.parties.communicating_investor ?>
+<? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
 
-<para_1>
-<Table aid:table="table" aid:tcols="2" aid:trows="<?= Object.keys(communicating_investors).length+1 ?>" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+<para_1><Table aid:table="table" aid:tcols="4" aid:trows="<?= Object.keys(communicatingInvestors).length+1 ?>" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Name</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Address</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Email</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Share Class</cell_c></Cell>
 
-<? for (var hh in communicating_investors) {
-  if (data._entitiesByName[hh] == undefined) { continue }
-  with(data._entitiesByName[hh]) { ?>
-<Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= hh ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.name ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.address) ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.email ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.share_class ?></cell_c></Cell>
+<? for (var hh in communicatingInvestors) {
+  Logger.log("communicatingInvestors: outputting based on data.parties.communicating_investor[%s] = %s", hh, communicatingInvestors[hh].name);
+  with(communicating Investors[hh]) { ?>
+<Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= name ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= address ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= email ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= share_class ?></cell_c></Cell>
 <? } } ?>
-</Table>
-</para_1>
+</Table></para_1>
  
 <chapter_header>Signatures</chapter_header>
 
