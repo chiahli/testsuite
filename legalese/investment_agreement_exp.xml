@@ -344,10 +344,6 @@
 
 <chapter_header xname="exp_exhibit_a">EXHIBIT A: CONTACT DETAILS</chapter_header>
 
-<? var activeRound = data.capTable.getActiveRound(); ?>
-<? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
-<? } ?>
 <? var new_investors = data.capTable.getActiveRound().new_investors; ?>
 <? var communicating_investors = Object.keys(new_investors); ?>
 
@@ -357,7 +353,7 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Address</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Email</cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Share Class</cell_c></Cell>
-<? var communicating_investors = []; ?>
+
 <? for (var hh in communicating_investors) {
   if (data._entitiesByName[hh] == undefined) { continue }
   with(data._entitiesByName[hh]) { ?>
