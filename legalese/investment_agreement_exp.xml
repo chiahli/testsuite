@@ -342,7 +342,7 @@
 
 <chapter_header xname="exp_exhibit_a">EXHIBIT A: CONTACT DETAILS</chapter_header>
 
-<? var new_investors = data.capTable.getActiveRound().new_investors; ?>
+<? var new_investors = data.capTable.getActiveRound(); ?>
 <? var communicating_investors = Object.keys(new_investors); ?>
 
 <para_1>
