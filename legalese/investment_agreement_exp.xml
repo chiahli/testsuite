@@ -357,7 +357,7 @@
 
 <? for (var hh in communicatingInvestors) {
   Logger.log("communicatingInvestors: outputting based on data.parties.communicating_investor[%s] = %s", hh, communicatingInvestors[hh].name);
-  with(communicating Investors[hh]) { ?>
+  with(communicatingInvestors[hh]) { ?>
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= name ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= address ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= email ?></cell_c></Cell>
