@@ -355,13 +355,13 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Share Class</cell_c></Cell>
 
 <? for (var hh in communicating_investors) {
-  if (data._entitiesByName[hh] == undefined) { continue };
+  if (data._entitiesByName[hh] == undefined) { continue }
   with(data._entitiesByName[hh]) { ?>
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= hh ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= name(hh, activeRound) ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= address(hh, activeRound) ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= email(hh, activeRound) ?></cell_c></Cell>
-<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= share class(hh, activeRound) ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.name ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.address) ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.email ?></cell_c></Cell>
+<Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= communicating_investors.share_class ?></cell_c></Cell>
 <? } } ?>
 </Table>
 </para_1>
