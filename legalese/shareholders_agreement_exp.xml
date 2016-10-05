@@ -416,7 +416,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <b_left_sidehead xname="exp_pre_investment_capitalization">Pre-investment capitalization</b_left_sidehead>
 
-<? Logger.log("shareholders_agreement/existing_investors: calling data.capTable.getActiveRound()"); ?>
+<? xmLog("shareholders_agreement/existing_investors: calling data.capTable.getActiveRound()"); ?>
 <? var oldInvestors  = data.capTable.getActiveRound().getOldInvestors(); ?>
 <? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
 <? if (previousRound != undefined && oldInvestors != undefined) { ?>
@@ -441,7 +441,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<?   xmLog("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
 <? var allInvestors = data.capTable.getActiveRound().getAllInvestors(); ?>
 
@@ -464,7 +464,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<?   xmLog("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
 <? var keyHolders  = data.parties.key_holder ?>
 <? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
@@ -480,7 +480,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 <Cell aid:ccols="1" aid:ccolwidth="60" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Acceleration</cell_c></Cell>
 
 <? for (var hh in keyHolders) {
-  Logger.log("keyHolders: outputting based on data.parties.key_holder[%s] = %s", hh, keyHolders[hh].name);
+  xmLog("keyHolders: outputting based on data.parties.key_holder[%s] = %s", hh, keyHolders[hh].name);
   with(keyHolders[hh]) { ?>
 <Cell aid:ccols="1" aid:ccolwidth="60" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= name ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="70" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?!= data.capTable.investorHoldingsInRound(name, previousRound) ?></cell_c></Cell>
@@ -499,7 +499,7 @@ in accordance with this Clause, dispose of the Offered Shares to any other third
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<?   xmLog("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
 <? var allInvestors = data.capTable.getActiveRound().getAllInvestors(); ?>
 
