@@ -263,7 +263,7 @@
 
 <b_left_sidehead_nonum>Pre-investment capitalization</b_left_sidehead_nonum>
 
-<? Logger.log("shareholders_agreement/existing_investors: calling data.capTable.getActiveRound()"); ?>
+<? xmLog("shareholders_agreement/existing_investors: calling data.capTable.getActiveRound()"); ?>
 <? var oldInvestors  = data.capTable.getActiveRound().getOldInvestors(); ?>
 <? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
 <? if (previousRound != undefined && oldInvestors != undefined) { ?>
@@ -287,7 +287,7 @@
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<?   xmLog("keyHolders: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
 <? var new_investors = data.capTable.getActiveRound(); ?>
 
@@ -344,7 +344,7 @@
 
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? for (var bstk in activeRound.by_security_type) { var bstv = activeRound.by_security_type[bstk]; ?>
-<?   Logger.log("communicatingInvestors: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
+<?   xmLog("communicatingInvestors: round=%s, by_security_type:%s has keys keys %s", activeRound.name, bstk, bstv); ?>
 <? } ?>
 <? var communicatingInvestors  = data.parties.communicating_investor ?>
 <? var previousRound = data.capTable.getActiveRound().getPreviousRound(); ?>
@@ -356,7 +356,7 @@
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="border_none"><cell_c>Share Class</cell_c></Cell>
 
 <? for (var hh in communicatingInvestors) {
-  Logger.log("communicatingInvestors: outputting based on data.parties.communicating_investor[%s] = %s", hh, communicatingInvestors[hh].name);
+  xmLog("communicatingInvestors: outputting based on data.parties.communicating_investor[%s] = %s", hh, communicatingInvestors[hh].name);
   with(communicatingInvestors[hh]) { ?>
 <Cell aid:ccols="1" aid:ccolwidth="140" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= name ?></cell_c></Cell>
 <Cell aid:ccols="1" aid:ccolwidth="100" aid:crows="1" aid:table="cell" aid5:cellstyle="horizontal_hairline"><cell_c><?= address ?></cell_c></Cell>
