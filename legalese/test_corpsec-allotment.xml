@@ -21,10 +21,6 @@
 <basic_para addnewline="true" />
 <basic_para addnewline="true" />
 
-<? if (data.external_financing_date) { ?>
-  <para_1>We refer to the Class F Agreement dated <?= data.class_f_agreement_date ?> and clause <?= data.conversion_of_unrestricted_shares_clause_number ?> that provided for the conversion of all unrestricted shares at the first external financing where the first external financing event is defined in clause <?= data.external_financing_clause_number ?>.</para_1>
-<? } ?>
-
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? var newIssues = data.capTable.getActiveRound().getNewIssues(); ?>
 <? if (newIssues && newIssues.TOTAL._orig_shares != 0) { ?>
@@ -36,6 +32,7 @@
 <numbered_2_para>the Company's <?= plural(Object.keys(newIssues.holders), "allotment") ?>
  of <?= newIssues.TOTAL.shares ?> <?= data.security_type_short_plural ?> <?= plural_verb(Object.keys(newIssues.holders), "is") ?>
 <? if (data.share_grant) { ?> for no consideration;
+<? } then { ?> in relation to the conversion of Unrestricted Class F Shares as provided for in the Class F Agreements dated <?= data.class_f_agreement_date ?> clause <?= data.conversion_of_unrestricted_shares_clause_number ?>;
 <? } else { ?> for cash consideration;
 subscription monies amounting to <?= newIssues.TOTAL.money ?> have been received by the Company in respect of the allotment of <?= newIssues.TOTAL.shares ?> <?= data.security_type_short_plural ?>;
 <? } ?>
