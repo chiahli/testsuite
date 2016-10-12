@@ -21,14 +21,15 @@
 <basic_para addnewline="true" />
 <basic_para addnewline="true" />
 
+<? if (data.external_financing_date) { ?>
+  <para_1>We refer to the Class F Agreement dated <?= data.class_f_agreement_date ?> and clause <?= data.conversion_of_unrestricted_shares_clause_number ?> that provided for the conversion of all unrestricted shares at the first external financing where the first external financing event is defined in clause <?= data.external_financing_clause_number ?>.</para_1>
+<? } ?>
+
 <? var activeRound = data.capTable.getActiveRound(); ?>
 <? var newIssues = data.capTable.getActiveRound().getNewIssues(); ?>
 <? if (newIssues && newIssues.TOTAL._orig_shares != 0) { ?>
 
 <chapter_header override="startParagraph=StartParagraph.ANYWHERE">Allotment of <?= data.security_type_plural ?></chapter_header>
-<? if (data.external_financing_date) { ?>
-  <para_1>We refer to the Class F Agreement dated <?= data.class_f_agreement_date ?> and clause <?= data.conversion_of_unrestricted_shares_clause_number ?> that provided for the conversion of all unrestricted shares at the first external financing where the first external financing event is defined in clause <?= data.external_financing_clause_number ?>.</para_1>
-<? } ?>
 <para_1>Regarding the allotment of <?= data.security_type_plural ?> to the <?= plural(Object.keys(newIssues.holders), "new investor") ?> <?= commaAnd(Object.keys(newIssues.holders)) ?>,</para_1>
 <numbered_1_para>We hereby confirm that:</numbered_1_para>
 
